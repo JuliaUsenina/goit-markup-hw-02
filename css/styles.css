@@ -1,9 +1,21 @@
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --accent-color: #2196f3;
+}
 body {
   background: #e5e5e5;
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   color: #212121;
+  letter-spacing: 0.03em;
 }
-
+/*===========HEADER===========*/
 .page-header {
   background: #ffffff;
 }
@@ -11,17 +23,15 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   color: #212121;
 }
 .logo-part {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: Raleway, sans-serif;
-  color: #2196f3;
+  font-family: var(--secondary-font);
+  color: var(--accent-color);
 }
 .nav-link,
 .filter-options,
@@ -36,7 +46,37 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.main-section {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--accent-color);
+}
+.contacts-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link:active {
+  color: var(--accent-color);
+}
+/*========END HEADER========*/
+
+/*========COMPONENTS========*/
+.aside-headline,
+.section-headline {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: #212121;
+}
+/*======END COMPONENTS======*/
+
+/*========HERO==============*/
+.hero {
   background: #2f303a;
 }
 .main-header {
@@ -48,7 +88,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.button-order {
+.modal-btn {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -66,28 +106,25 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+/*========END HERO===========*/
+
+/*========CONTENT===========*/
+
 .content-item {
-  font-weight: 700, bold;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 .content-text {
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: #757575;
 }
-.section-headline {
-  font-weight: 700, bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
+/*========END CONTENT========*/
+
+/*=========TEAM===========*/
 .section-team {
   background: #f5f4fa;
 }
@@ -96,39 +133,23 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 .name-job {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-  color: #2196f3;
-}
-.contacts-item {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.contacts-item:hover,
-.contacts-item:focus,
-.contacts-item:active {
-  color: #2196f3;
-}
+/*========END TEAM==========*/
+
+/*========PROJECTS==========*/
+
 .filter-button:hover,
 .filter-button:focus,
 .filter-button:active {
-  background: #2196f3;
+  background: var(--accent-color);
 }
-
 .filter-item {
   background: #f5f4fa;
   border-radius: 4px;
@@ -152,9 +173,11 @@ body {
 .project-description {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: #757575;
 }
+/*========END PROJECTS=======*/
+
+/*=========FOOTER===========*/
 .footer {
   background: #2f303a;
 }
@@ -162,26 +185,23 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   color: #e5e5e5;
 }
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .address-contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .address-contacts:hover,
 .address-contacts:focus,
 .address-contacts:active {
-  color: #2196f3;
+  color: var(--accent-color);
 }
