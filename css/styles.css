@@ -4,13 +4,15 @@
 .link {
   text-decoration: none;
 }
+.nav-link.current {
+  color: var(--accent-color);
+}
 :root {
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
   --accent-color: #2196f3;
 }
 body {
-  background: #e5e5e5;
   font-family: var(--main-font);
   color: #212121;
   letter-spacing: 0.03em;
@@ -18,20 +20,6 @@ body {
 /*===========HEADER===========*/
 .page-header {
   background: #ffffff;
-}
-.logo {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  font-family: var(--secondary-font);
-  color: #212121;
-}
-.logo-part {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  font-family: var(--secondary-font);
-  color: var(--accent-color);
 }
 .nav-link,
 .filter-options,
@@ -46,12 +34,9 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-  color: var(--accent-color);
-}
+
 .contacts-link {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -65,13 +50,29 @@ body {
 /*========END HEADER========*/
 
 /*========COMPONENTS========*/
+.logo,
+.logo-footer,
+.logo-part {
+  margin-right: -7px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: var(--secondary-font);
+  color: #212121;
+}
 .aside-headline,
 .section-headline {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: #212121;
+}
+.logo-footer {
+  color: #ffffff;
+}
+.logo-part {
+  color: var(--accent-color);
 }
 /*======END COMPONENTS======*/
 
@@ -97,7 +98,7 @@ body {
 .button-text {
   font-family: inherit;
   font-style: normal;
-  font-weight: 700, bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
@@ -111,7 +112,7 @@ body {
 /*========CONTENT===========*/
 
 .content-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -145,11 +146,6 @@ body {
 
 /*========PROJECTS==========*/
 
-.filter-button:hover,
-.filter-button:focus,
-.filter-button:active {
-  background: var(--accent-color);
-}
 .filter-item {
   background: #f5f4fa;
   border-radius: 4px;
@@ -162,9 +158,16 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background: var(--accent-color);
 }
 .project-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -181,13 +184,7 @@ body {
 .footer {
   background: #2f303a;
 }
-.logo-footer {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  font-family: var(--secondary-font);
-  color: #e5e5e5;
-}
+
 .address {
   font-style: normal;
   font-size: 14px;
