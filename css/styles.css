@@ -1,3 +1,8 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --accent-color: #2196f3;
+}
 .list {
   list-style: none;
 }
@@ -6,11 +11,6 @@
 }
 .nav-link.current {
   color: var(--accent-color);
-}
-:root {
-  --main-font: Roboto, sans-serif;
-  --secondary-font: Raleway, sans-serif;
-  --accent-color: #2196f3;
 }
 body {
   font-family: var(--main-font);
